@@ -4,6 +4,10 @@ import java.net.http.WebSocket;
 import java.util.List;
 
 public class Notification {
+    // This service ensures that we register listeners who are interested to receive notification
+    // if any listener wants to be added subscribe() method is called
+    // if a listener opts out of the service unsubscribe() method is called
+    // this reduces chances of unnecessary notification events
     private List<Listener> listeners;
 
     Notification(List<Listener> listeners){
