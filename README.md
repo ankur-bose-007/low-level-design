@@ -1,0 +1,1 @@
+This project is desgined to cover basic LLD topics such as SOLID principles, design patterns etc
