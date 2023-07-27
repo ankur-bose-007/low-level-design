@@ -1,6 +1,6 @@
 package designpatterns.strategy.correct;
 
-public class QuickSort implements Sorting{
+public class QuickSort implements SortingStrategy {
 
     @Override
     public void sort() {

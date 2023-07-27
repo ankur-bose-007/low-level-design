@@ -1,6 +1,6 @@
 package designpatterns.strategy.correct;
 
-public class MergeSort implements Sorting{
+public class MergeSort implements SortingStrategy{
 
     @Override
     public void sort() {
