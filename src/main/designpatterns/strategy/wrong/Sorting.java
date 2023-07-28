@@ -1,4 +1,4 @@
-package designpatterns.strategy.wrong;
+package main.designpatterns.strategy.wrong;
 
 public class Sorting {
     public void sort(String sortType){

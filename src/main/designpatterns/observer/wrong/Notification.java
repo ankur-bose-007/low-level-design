@@ -1,4 +1,4 @@
-package designpatterns.observer.wrong;
+package main.designpatterns.observer.wrong;
 
 import java.util.List;
 

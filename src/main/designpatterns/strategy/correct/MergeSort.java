@@ -1,4 +1,4 @@
-package designpatterns.strategy.correct;
+package main.designpatterns.strategy.correct;
 
 public class MergeSort implements SortingStrategy{
 

@@ -1,4 +1,4 @@
-package designpatterns.observer.correct;
+package main.designpatterns.observer.correct;
 
 public class SmsListener implements Listener{
     private String phone;

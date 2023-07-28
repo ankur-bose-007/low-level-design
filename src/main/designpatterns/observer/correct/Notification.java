@@ -1,6 +1,5 @@
-package designpatterns.observer.correct;
+package main.designpatterns.observer.correct;
 
-import java.net.http.WebSocket;
 import java.util.List;
 
 public class Notification {

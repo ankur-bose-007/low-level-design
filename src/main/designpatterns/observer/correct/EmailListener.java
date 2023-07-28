@@ -1,4 +1,4 @@
-package designpatterns.observer.correct;
+package main.designpatterns.observer.correct;
 
 public class EmailListener implements Listener {
     private String email;
