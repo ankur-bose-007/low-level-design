@@ -9,9 +9,12 @@ public class LockedSingleton {
     private LockedSingleton(){}
 
     public synchronized LockedSingleton getInstance(){
-        synchronized (this){
-            if(instance == null)
-                instance = new LockedSingleton();
+        if(instance == null){
+            synchronized (this){
+                // check again as multiple threads can reach the above block
+                if(instance == null)
+                    instance = new LockedSingleton();
+            }
         }
         return instance;
     }
