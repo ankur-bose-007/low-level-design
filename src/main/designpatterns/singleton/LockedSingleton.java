@@ -10,7 +10,7 @@ public class LockedSingleton {
 
     public synchronized LockedSingleton getInstance(){
         if(instance == null){
-            synchronized (this){
+            synchronized (LockedSingleton.class){
                 // check again as multiple threads can reach the above block
                 if(instance == null)
                     instance = new LockedSingleton();
