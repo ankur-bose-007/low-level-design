@@ -1,14 +1,16 @@
 package main.designpatterns.proxy.wrong;
 
-// In this example the client is trying to create a multiple SQLConnection object
-// and this would call the initialization phase multiple times
-// which is unnecessary. The client is unaware of this heavy initialization code
-// that is running everytime. This can be solved using proxy design pattern.
+
+// With this process each time the methods of ThirdPartyYoutubeLibrary
+// is called an api request is made. This makes redundant calls the hence
+// results in a lot of computation and memory inefficiency. This can
+// be avoided by introducing a proxy wrapper and caching data.
 public class Client {
-    public void process(){
-        Database db = new SQLConnection();
-        db.createConnection();
-        db = new SQLConnection();
-        db.createConnection();
+    public void render(){
+        ThirdPartyYoutubeLibrary thirdPartyYoutubeLibrary = new ThirdPartyYoutubeClass();
+
+        thirdPartyYoutubeLibrary.listVideos();
+        thirdPartyYoutubeLibrary.getVideoInfo(1);
+        thirdPartyYoutubeLibrary.downloadVideo(1);
     }
 }
